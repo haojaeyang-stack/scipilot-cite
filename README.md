@@ -195,14 +195,6 @@ Stage 3 完成只是初筛。**真正的最终防线是 Stage 7 第 0 项的 Gat
 
 完整格式规范、模板、真实示例见 [`references/citation-formats.md`](references/citation-formats.md)。
 
-### 限制（请如实了解）
-
-- **检索召回不是 100%**：API 索引覆盖不全，冷门方向或极新文献可能漏掉。需要你提供必引论文时，Skill 会强制要求 DOI 或完整元数据，不会自己编。
-- **相关性评分基于关键词匹配**：摘要与你的章节有词面重叠才会被认为相关；对纯方法学论述（无具体术语）可能选不准最贴切的文献。
-- **Word 格式适配是基础级**：保留段落和 Heading 样式，但复杂的 Field Code、自动编号交叉引用不支持。投顶刊建议导出 LaTeX。
-- **不能自动判断需要"哪类"引用**：是否需要综述性引用、对比性引用、方法学引用，由 Stage 4 评分给出建议，最终需要你确认。
-- **API 速率限制存在**：S2 默认匿名 5000 次 / 5 分钟，大批量场景会被延迟。
-
 ### SciPilot 家族
 
 | Skill | 状态 | 功能 |
@@ -219,13 +211,6 @@ Stage 3 完成只是初筛。**真正的最终防线是 Stage 7 第 0 项的 Gat
 2. **真实性第一**：不编造任何学术信息
 3. **一手文献驱动**：规则来自真实期刊规范，不靠"一般感觉"
 4. **格式即法律**：同一论文格式必须绝对一致
-
-### 路线图
-
-- **v1.1**: 增加 ACS / ACM Reference Format / Chicago / MLA 支持
-- **v1.2**: 接入 PubMed 与 ADS（天文）作为可选数据源
-- **v1.3**: 支持已有 `.bib` 文件合并 / 去重 / 升级
-- **v2.0**: 与 `scipilot-polish` 联动，引用插入后自动润色对应句子
 
 ### 贡献
 
@@ -417,14 +402,6 @@ Stage 3 is only an initial filter. **The real final defense is Gate 8 at Stage 7
 
 Full specs, templates and real examples in [`references/citation-formats.md`](references/citation-formats.md).
 
-### Limitations (read honestly)
-
-- **Recall is not 100%**: API index coverage varies; very niche or very recent work may be missed. When you supply mandatory references, the Skill requires a DOI or full metadata — it will never invent one.
-- **Relevance scoring is keyword-based**: candidates score higher when their abstracts share vocabulary with your sections. For pure-methodology prose without distinctive terminology, top choices may not be optimal.
-- **Word format support is basic**: paragraphs and Heading styles are preserved; complex Field Codes and auto-numbered cross-references aren't. For high-impact submissions, prefer LaTeX.
-- **The Skill does not auto-decide citation function**: whether a slot needs a survey, a method comparison, or a benchmark citation is suggested in Stage 4 but ultimately needs your confirmation.
-- **API rate limits apply**: Semantic Scholar defaults to 5000 calls / 5 min for anonymous use; very large batches will be paced.
-
 ### SciPilot family
 
 | Skill | Status | Purpose |
@@ -441,13 +418,6 @@ All members share four design principles:
 2. **Authenticity first** — never fabricate academic information
 3. **Primary-source driven** — rules come from real journal style guides
 4. **Format is law** — one paper, one consistent style
-
-### Roadmap
-
-- **v1.1**: Add ACS, ACM Reference Format, Chicago, MLA
-- **v1.2**: Optional PubMed and ADS (astronomy) data sources
-- **v1.3**: Merge / dedupe / upgrade existing `.bib` files
-- **v2.0**: Tight integration with `scipilot-polish` so newly inserted sentences are auto-polished
 
 ### Contributing
 
