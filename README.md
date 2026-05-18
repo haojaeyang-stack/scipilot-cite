@@ -237,7 +237,7 @@ Stage 3 完成只是初筛。**真正的最终防线是 Stage 7 第 0 项的 Gat
 | **scipilot-cite-skill** | v1.0.0 (本仓库) | 文献检索与引用插入 |
 | scipilot-polish-skill | 规划中 | 学术论文润色 |
 | scipilot-review-skill | 规划中 | AI 模拟审稿 |
-| scipilot-figure-skill | 规划中 | 科研图表生成 |
+| scipilot-figure-skill | [v2.0.0](https://github.com/Haojae/scipilot-figure-skill) | 科研数据可视化顾问 + 绘制 |
 | scipilot-submit-skill | 规划中 | 投稿格式适配 |
 | scipilot-read-skill | 规划中 | 论文阅读与翻译 |
 
@@ -479,7 +479,7 @@ Full specs, templates and real examples in [`references/citation-formats.md`](re
 | **scipilot-cite-skill** | v1.0.0 (this repo) | Reference discovery and insertion |
 | scipilot-polish-skill | Planned | Academic prose polishing |
 | scipilot-review-skill | Planned | AI peer-review simulation |
-| scipilot-figure-skill | Planned | Scientific figures |
+| scipilot-figure-skill | [v2.0.0](https://github.com/Haojae/scipilot-figure-skill) | Visualization advisor + renderer |
 | scipilot-submit-skill | Planned | Submission formatting |
 | scipilot-read-skill | Planned | Paper reading and translation |
 
